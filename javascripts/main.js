@@ -2,4 +2,4 @@
 
 require('./events');
 require('./cats');
-
+require('./dom');
