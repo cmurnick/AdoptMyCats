@@ -1,10 +1,11 @@
-Adopt My Cats
+## Adopt My Cats
 
-Summary
+
+#### Summary
 
 The purpose of this project was to use jquery for the first time and aquire data from an API file.
 
-Our Instructions:
+####Our Instructions:
 
 I'm the owner of a cat adoption website. I need a website that allows me to load in the number of cats I currently have available, display them on my screen, then be able to filter them based on whether or not they are considered disabled (have 10 toes or less).
 
