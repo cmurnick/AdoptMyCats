@@ -7,8 +7,8 @@ const createDomString = (catz) => {
 	
     for(let i=0; i<catz.length; i++){
         let newCat = "";
-        newCat +=	`<div class="cat-card thumbnail">`;
-		newCat +=	  `<div class="image-container">`;
+        newCat +=	`<div class="cat-card thumbnail col-xs-12 col-sm-6 col-md-3">`;
+		newCat +=	  `<div class="image-container ">`;
 		newCat +=	    `<img src="${catz[i].imageUrl}">`;
 		newCat +=	  `</div>`;
 		newCat +=	  `<div class="description-container">`;
@@ -17,8 +17,8 @@ const createDomString = (catz) => {
 		newCat +=	    `<p> Skills: ${catz[i].specialSkill} </p>`;
 		
 
-		if ($(catz[i].numberOfToes) <= 10 ) {
-			newCat += `<p class="disabled-kitty"> Toes: ${catz[i].numberOfToes} </p>`;
+		if (`${catz[i].numberOfToes}` <= 10 ) {
+			newCat += `<p id="toes" class="disabled-kitty"> Toes: ${catz[i].numberOfToes} </p>`;
 		} else {
 			newCat += `<p class="disabled-cat"> Toes: ${catz[i].numberOfToes} </p>`;
 		}

@@ -13,19 +13,37 @@ $('#catNumber').keypress((event) => {
 		cats.catsLoad(catFinalNumber);
 		console.log(catFinalNumber);
 		$(".original").hide();
+		$(".ridOf").removeClass("hidden");
 	}
 
 });
 
 
 $('#goCat').click(() => {
-	console.log("this is shit");
+	let catFinalNumber = $('#catNumber').val();
+	cats.catsLoad(catFinalNumber);
+	console.log(catFinalNumber);
+	$(".original").hide();
+	$(".ridOf").removeClass("hidden");
 });
 
-// The input and button originally shown on the page should be hidden.
+$('.ridOf').click(() => {
+	if($(".cat-card").hasClass('disabled-kitty')){
+    	console.log();
+
+	}
+});
 
 
-// A new button should now appear at the top of the page: 'Get Rid Of The Disabled Ones'
+
+$('.ridOf').click(() => {
+	let catToes = $('#toes').hasClass("disabled-kitty");
+	
+});
+	// if($(".cat-card").hasClass('disabled-kitty')){
+ //    	console.log();
+
+
 // Once I click on the 'Get Rid Of The Disabled Ones' button, any card on my page that has a p tag with the class disabled-kitty should be hidden.
 
 //maybe use some of this for the add/remove things with class
