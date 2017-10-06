@@ -27,21 +27,12 @@ $('#goCat').click(() => {
 	$(".ridOf").removeClass("hidden");
 });
 
-$('.ridOf').click(() => {
-	if($(".cat-card").hasClass('disabled-kitty')){
-    	console.log();
-
-	}
-});
 
 
+$('#gone').click((event) => {
+	$(".disabled-kitty").parentsUntil('#diffCats').remove();
+   	});
 
-$('.ridOf').click(() => {
-	let catToes = $('#toes').hasClass("disabled-kitty");
-	
-});
-	// if($(".cat-card").hasClass('disabled-kitty')){
- //    	console.log();
 
 
 // Once I click on the 'Get Rid Of The Disabled Ones' button, any card on my page that has a p tag with the class disabled-kitty should be hidden.
