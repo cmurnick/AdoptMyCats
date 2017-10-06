@@ -15,6 +15,7 @@ I'm the owner of a cat adoption website. I need a website that allows me to load
 4. I should be able to make a call to: https://random-dogs-api.herokuapp.com/cats/NUMBEROFCATZZZZZ (obviously replacing NUMBEROFCATZZZZZ with the actual number I entered in step 1).
 
 Once all the cats come back:
+
 5. They should be displayed on my page in card-like style (use Bootstrap columns to aid in this).
 6. Your card should be a div, it should have a nested div to display the cat image, it should have another nested div to contain all the descriptive elements (each in their own p tag).
 
